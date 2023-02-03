@@ -1,0 +1,228 @@
+#1
+{cslinux1:~} echo $0
+-bash
+{cslinux1:~} 
+
+#2
+{cslinux1:~} ls -lst
+total 96
+32 drwx--x--x 2 mad220000 sn 52 Jan 30 16:31 activity02
+32 drwxr-xr-x 2 mad220000 sn  0 Jan 25 15:59 perl5
+32 drwx--x--x 2 mad220000 sn  0 Mar 26  2022 public_html
+
+
+
+#3
+{cslinux1:~} man ls
+
+              name.
+
+       --scontext
+              Display only security context and file name.
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       SIZE  is  an integer and optional unit (example: 10M is 10*1024*1024).  Units are K, M, G, T, P, E, Z, Y (powers of 1024)
+       or KB, MB, ... (powers of 1000).
+
+       Using color to distinguish file types is disabled both by default and with --color=never.  With  --color=auto,  ls  emits
+       color codes only when standard output is connected to a terminal.  The LS_COLORS environment variable can change the set‐
+       tings.  Use the dircolors command to set it.
+
+   Exit status:
+       0      if OK,
+
+       1      if minor problems (e.g., cannot access subdirectory),
+
+       2      if serious trouble (e.g., cannot access command-line argument).
+
+       GNU coreutils online help: <http://www.gnu.org/software/coreutils/> Report ls translation bugs to <http://translationpro‐
+       ject.org/team/>
+
+AUTHOR
+       Written by Richard M. Stallman and David MacKenzie.
+
+COPYRIGHT
+       Copyright    ©    2013   Free   Software   Foundation,   Inc.    License   GPLv3+:   GNU   GPL   version   3   or   later
+       <http://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+
+SEE ALSO
+       The full documentation for ls is maintained as a Texinfo manual.  If the info and ls programs are properly  installed  at
+       your site, the command
+
+              info coreutils 'ls invocation'
+
+       should give you access to the complete manual.
+
+
+
+GNU coreutils 8.22                                        November 2020                                                    LS(1)
+ Manual page ls(1) line 185/230 (END) (press h for help or q to quit)
+
+
+
+
+
+
+
+#4
+{cslinux1:~} man cat
+
+CAT(1)                                                    User Commands                                                   CAT(1)
+
+
+
+NAME
+       cat - concatenate files and print on the standard output
+
+SYNOPSIS
+       cat [OPTION]... [FILE]...
+
+DESCRIPTION
+       Concatenate FILE(s), or standard input, to standard output.
+
+       -A, --show-all
+              equivalent to -vET
+
+       -b, --number-nonblank
+              number nonempty output lines, overrides -n
+
+       -e     equivalent to -vE
+
+       -E, --show-ends
+              display $ at end of each line
+
+       -n, --number
+              number all output lines
+
+       -s, --squeeze-blank
+              suppress repeated empty output lines
+
+       -t     equivalent to -vT
+
+       -T, --show-tabs
+              display TAB characters as ^I
+
+       -u     (ignored)
+
+       -v, --show-nonprinting
+              use ^ and M- notation, except for LFD and TAB
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       With no FILE, or when FILE is -, read standard input.
+ Manual page cat(1) line 1 (press h for help or q to quit)
+
+
+
+
+#5
+{cslinux1:~} man cp | less
+
+       That is the behavior selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST file whenever the SOURCE
+       file contains a long enough sequence of zero bytes.  Use --sparse=never to inhibit creation of sparse files.
+
+       When  --reflink[=always]  is  specified, perform a lightweight copy, where the data blocks are copied only when modified.
+       If this is not possible the copy fails, or if --reflink=auto is specified, fall back to a standard copy.
+
+       The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.  The version control method may  be  selected
+       via the --backup option or through the VERSION_CONTROL environment variable.  Here are the values:
+
+       none, off
+              never make backups (even if --backup is given)
+
+       numbered, t
+              make numbered backups
+
+       existing, nil
+              numbered if numbered backups exist, simple otherwise
+
+       simple, never
+              always make simple backups
+
+       As  a  special  case, cp makes a backup of SOURCE when the force and backup options are given and SOURCE and DEST are the
+       same name for an existing, regular file.
+
+       GNU coreutils online help: <http://www.gnu.org/software/coreutils/> Report cp translation bugs to <http://translationpro‐
+       ject.org/team/>
+
+AUTHOR
+       Written by Torbjorn Granlund, David MacKenzie, and Jim Meyering.
+
+COPYRIGHT
+       Copyright    ©    2013   Free   Software   Foundation,   Inc.    License   GPLv3+:   GNU   GPL   version   3   or   later
+       <http://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+
+SEE ALSO
+       The full documentation for cp is maintained as a Texinfo manual.  If the info and cp programs are properly  installed  at
+       your site, the command
+
+              info coreutils 'cp invocation'
+
+       should give you access to the complete manual.
+
+
+
+GNU coreutils 8.22                                        November 2020                                                    CP(1)
+(END)
+
+
+
+#6
+{cslinux1:~} man echo
+
+
+       \b     backspace
+
+       \c     produce no further output
+
+       \e     escape
+
+       \f     form feed
+
+       \n     new line
+
+       \r     carriage return
+
+       \t     horizontal tab
+
+       \v     vertical tab
+
+       \0NNN  byte with octal value NNN (1 to 3 digits)
+
+       \xHH   byte with hexadecimal value HH (1 to 2 digits)
+
+       NOTE:  your shell may have its own version of echo, which usually supersedes the version described here.  Please refer to
+       your shell's documentation for details about the options it supports.
+
+       GNU coreutils online help: <http://www.gnu.org/software/coreutils/> Report echo translation bugs to  <http://translation‐
+       project.org/team/>
+
+AUTHOR
+       Written by Brian Fox and Chet Ramey.
+
+COPYRIGHT
+       Copyright    ©    2013   Free   Software   Foundation,   Inc.    License   GPLv3+:   GNU   GPL   version   3   or   later
+       <http://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+
+SEE ALSO
+       The full documentation for echo is maintained as a Texinfo manual.  If the info and echo programs are properly  installed
+       at your site, the command
+
+              info coreutils 'echo invocation'
+
+       should give you access to the complete manual.
+
+
+
+GNU coreutils 8.22                                        November 2020                                                  ECHO(1)
+ Manual page echo(1) line 31/76 (END) (press h for help or q to quit)
